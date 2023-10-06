@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Button, FlatList } from "react-native";
 import styles from "../../sign_in/view/styles";
-
+import ImageDetail from "../../components/image_detail";
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.homeview}>
@@ -10,9 +10,11 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate("SignIn")}
         title="Learn More"
       />
+      <Button
+        onPress={() => navigation.navigate("Counters")}
+        title="Counter"
+      />
     
     </View>
-  );
-}
+  );}
 export default HomeScreen;
-
