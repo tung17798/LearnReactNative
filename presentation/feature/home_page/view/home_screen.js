@@ -10,11 +10,12 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate("SignIn")}
         title="Learn More"
       />
+      <Button onPress={() => navigation.navigate("Counters")} title="Counter" />
       <Button
-        onPress={() => navigation.navigate("Counters")}
-        title="Counter"
+        onPress={() => navigation.navigate("SquareScreens")}
+        title="Square"
       />
-    
     </View>
-  );}
+  );
+}
 export default HomeScreen;
