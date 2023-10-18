@@ -7,6 +7,7 @@ import HomeScreen from "./presentation/feature/home_page/view/home_screen";
 import ListScreen from "./presentation/feature/list_friends/view/list_friends_screen";
 import CounterScreens from "./presentation/feature/counter/view/counter_screen";
 import SquareScreens from "./presentation/feature/square_screens/view/square_screens";
+import WelcomeScreen from "./presentation/feature/welcome/welcome_screen";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -21,6 +22,11 @@ export default function App() {
         <Stack.Screen name="ListScreens" component={ListScreen} />
         <Stack.Screen name="Counters" component={CounterScreens} />
         <Stack.Screen name="SquareScreens" component={SquareScreens} />
+        <Stack.Screen
+          name="WelcomeScreen"
+          component={WelcomeScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

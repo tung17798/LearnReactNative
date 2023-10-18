@@ -15,6 +15,10 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate("SquareScreens")}
         title="Square"
       />
+      <Button
+        onPress={() => navigation.navigate("WelcomeScreen")}
+        title="Welcome"
+      />
     </View>
   );
 }
